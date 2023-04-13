@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textAppTitle">@dimen/_20ssp</dimen>
+    <dimen name="textActivityTitle">@dimen/_14ssp</dimen>
+    <dimen name="textContentTitle">@dimen/_13ssp</dimen>
+    <dimen name="textContentBody">@dimen/_10ssp</dimen>
+    <dimen name="textNote">@dimen/_9ssp</dimen>
+    <dimen name="textButton">@dimen/_12ssp</dimen>
+
+    <dimen name="iconLowSize">@dimen/_18sdp</dimen>
+    <dimen name="iconNormalSize">@dimen/_30sdp</dimen>
+    <dimen name="iconHighSize">@dimen/_40sdp</dimen>
+
+    <dimen name="roundCornerRadius">@dimen/_15sdp</dimen>
+    <dimen name="commonCornerRadius">@dimen/_5sdp</dimen>
+    <dimen name="commonElevation">@dimen/_3sdp</dimen>
+    <dimen name="commonStroke">@dimen/_1sdp</dimen>
+
+    <dimen name="extraHighMargin">@dimen/_20sdp</dimen>
+    <dimen name="highMargin">@dimen/_15sdp</dimen>
+    <dimen name="normalMargin">@dimen/_10sdp</dimen>
+    <dimen name="mediumMargin">@dimen/_5sdp</dimen>
+    <dimen name="lowMargin">@dimen/_3sdp</dimen>
+
+    <dimen name="highPadding">@dimen/_15sdp</dimen>
+    <dimen name="normalPadding">@dimen/_10sdp</dimen>
+    <dimen name="mediumPadding">@dimen/_5sdp</dimen>
+    <dimen name="lowPadding">@dimen/_3sdp</dimen>
+
+    <dimen name="itemVerySmallSize">@dimen/_10sdp</dimen>
+    <dimen name="itemSmallSize">@dimen/_20sdp</dimen>
+    <dimen name="itemNormalSize">@dimen/_30sdp</dimen>
+    <dimen name="itemHighSize">@dimen/_55sdp</dimen>
+    <dimen name="itemExtraHighSize">@dimen/_95sdp</dimen>
+</resources>

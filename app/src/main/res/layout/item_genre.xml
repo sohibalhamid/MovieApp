@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.project.movieapp.services.responses.GenresItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/commonCornerRadius"
+        android:layout_marginVertical="@dimen/normalMargin">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@{model.isSelected ? @drawable/roundrect_all_secondary : @drawable/roundrect_all_white}"
+            android:paddingVertical="@dimen/mediumMargin"
+            android:paddingHorizontal="@dimen/highMargin">
+
+            <TextView
+                android:id="@+id/tv_menu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Action"
+                android:text="@{model.name}"
+                android:textSize="@dimen/textContentBody"
+                android:textColor="@{model.isSelected ? @color/white : @color/gray_dark}" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+
+    <string name="title_morning">Pagi</string>
+    <string name="title_noon">Siang</string>
+    <string name="title_after_noon">Sore</string>
+    <string name="title_night">Malam</string>
+    <string name="title_common_ok">OK</string>
+    <string name="title_common_cancel">Batal</string>
+    <string name="title_all">All</string>
+    <string name="title_overview">Overview</string>
+    <string name="title_trailer">Trailer</string>
+    <string name="title_reviews">Reviews</string>
+
+    <string name="error_title_not_found">Not Found</string>
+    <string name="error_body_review_not_found">Review not found</string>
+    <string name="error_title_common">Something wrong…</string>
+    <string name="error_body_common">an error occurred, please try again later.</string>
+    <string name="error_network_connection">No internet connection, please check your internet connection</string>
+
+    <string name="tag_release_date">Released : %1$s</string>
+    <string name="tag_rating">Rating : %1$s</string>
+</resources>

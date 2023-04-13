@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.project.movieapp.services.responses.ResultsReviewItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/normalMargin"
+        app:cardCornerRadius="@dimen/commonCornerRadius"
+        app:cardBackgroundColor="@color/white_transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="@dimen/itemHighSize"
+                android:layout_height="@dimen/itemHighSize"
+                android:layout_margin="@dimen/normalMargin"
+                android:scaleType="centerCrop"
+                android:src="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normalMargin"
+                android:text="@{model.author}"
+                android:textSize="@dimen/textContentTitle"
+                android:textColor="@color/white"
+                tools:text="Nama"
+                app:layout_constraintStart_toEndOf="@+id/iv_user_photo"
+                app:layout_constraintTop_toTopOf="@+id/iv_user_photo" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lowMargin"
+                android:layout_marginStart="@dimen/normalMargin"
+                android:text="@{model.authorDetails.username}"
+                android:textSize="@dimen/textContentBody"
+                android:textColor="@color/gray_light"
+                android:textStyle="italic"
+                tools:text="Username"
+                app:layout_constraintStart_toEndOf="@+id/iv_user_photo"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normalMargin"
+                android:drawablePadding="@dimen/lowPadding"
+                android:textSize="@dimen/textContentBody"
+                android:textColor="@color/white"
+                tools:text="Rating : 0.0"
+                app:layout_constraintStart_toEndOf="@+id/iv_user_photo"
+                app:layout_constraintBottom_toBottomOf="@id/iv_user_photo"
+                app:drawableEndCompat="@drawable/ic_star" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/normalMargin"
+                android:layout_marginTop="@dimen/normalMargin"
+                android:background="@color/gray_light"
+                app:layout_constraintTop_toBottomOf="@id/iv_user_photo"/>
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normalMargin"
+                android:text="@{model.content}"
+                android:textSize="@dimen/textContentBody"
+                android:textColor="@color/white"
+                android:justificationMode="inter_word"
+                tools:text="While Creed III may not be the best in the franchise, it brings enough creativity and passion to the table to keep the series fresh.\r\n\r\nThe Rocky/Creed franchise is at its best when the villain is just as, if not more, interesting than our protagonist, and that is not more evident than in Creed III. Damien Anderson (expertly played by Jonathan Majors) is a very sympathetic antagonist that has a direct connection with Adonis Creed’s past. This connection is at the forefront of the conflict as Creed tries to reconcile with his past mistakes while also being true to his present self. This back and forth is excellently done and evolves Creed further as a boxer and a man. I really enjoyed this story overall, and while it may not be the most unique script to hit the silver screen, it does enough to differentiate itself from the rest of the Rocky universe, and I can respect that."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

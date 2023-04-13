@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0d253f</color>
+    <color name="secondary">#01b4e4</color>
+    <color name="tertiary">#90cea1</color>
+    <color name="dark_tertiary">#295635</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#939393</color>
+    <color name="gray_light" >#DBDBDB</color>
+    <color name="gray_dark" >#5F5F5F</color>
+
+    <color name="white_transparent">#40FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="success">#7DC579</color>
+    <color name="error">#FF6961</color>
+    <color name="warning">#FFB861</color>
+</resources>
